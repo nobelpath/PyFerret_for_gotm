@@ -65,11 +65,11 @@ to search for executables.
 
 Execute the following command on the terminal to install `pyferret` as well as
 `ferret_datasets` (the default Ferret/PyFerret datasets) into conda:
-```shell
-conda create -n FERRET
-conda activate FERRET
-conda install conda-forge/label/cf202003::pyferret conda-forge/label/cf202003::ferret_datasets
-~conda create -n FERRET -c conda-forge pyferret ferret_datasets --yes
+```diff
++ conda create -n FERRET
++ conda activate FERRET
++ conda install conda-forge/label/cf202003::pyferret conda-forge/label/cf202003::ferret_datasets
+- conda create -n FERRET -c conda-forge pyferret ferret_datasets --yes
 ```
 (`FERRET` is the environment name where `pyferret` is installed.
 You can change that to any name you like, such as `PyFerret`.)
